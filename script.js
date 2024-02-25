@@ -4,7 +4,7 @@ let compResult = 0;
 const choices = document.querySelectorAll(".choice");
 
 let comp = (()=>{
-    let options = [ "rock" , "paper" , "scissors" ];
+    let options = [ "rock" , "paper" , "scissor" ];
     let num = Math.floor(Math.random()*3);
     return options[num];
 });
@@ -62,11 +62,11 @@ choices.forEach ((choice) => {
         {
             drawGame();
         }
-        else if(userChoice == "rock" && compChoice == "scissors" )
+        else if(userChoice == "rock" && compChoice == "scissor" )
         {
             userWin( userChoice , compChoice );
         }
-        else if(userChoice == "scissors" && compChoice == "paper")
+        else if(userChoice == "scissor" && compChoice == "paper")
         {
             userWin( userChoice , compChoice );
         }
