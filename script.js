@@ -27,6 +27,9 @@ document.body.appendChild(btn);
 btn.addEventListener("click", ()=>{
     location.reload();
 });
+btn.addEventListener("mouseover", ()=>{
+    btn.style.cursor="pointer";
+});
 
 
 
